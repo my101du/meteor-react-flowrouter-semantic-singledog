@@ -15,6 +15,21 @@ Tony哥给了我大把的资料，让我尽快熟悉 `Meteor` 结合 `React` 的
 * 登录注册：没什么好说的，使用的 meteor 自带账号系统
 
 
+**访问地址(请全程全局翻墙，由于网络和开发时间、水平有限，可能会有一些奇怪的bug)**
+
+[meteor-单身狗配对](http://my101du-singledog.meteor.com)
+
+
+**截图**
+
+![](http://itjiaoshou.qiniudn.com/foreground/meteor-react-flowrouter-layout-semantic/dog-list.png)
+
+![](http://itjiaoshou.qiniudn.com/foreground/meteor-react-flowrouter-layout-semantic/nest-list.png)
+
+![](http://itjiaoshou.qiniudn.com/foreground/meteor-react-flowrouter-layout-semantic/my-profile.png)
+
+
+
 **已经使用到的技术清单**
 
 * Meteor 基础开发框架(以及自带的 `MongoDB`，`accounts-ui`,`check` 等 packages)
@@ -409,6 +424,23 @@ Meteor.call('updateDog', this.props.dogData._id, {followers: currentFollowers}, 
 
 1. 遗漏了某个 `class`,忘了把它改成`className`
 2. 所有html元素必须符合 xhtml 严格规范，例如 `img`等, 必须要闭合标签！
+
+
+
+# 部署
+
+本来想学习下 `pm2-meteor`的，但是我的阿里云主机上装的是 `CentOS 6`，在装 `node` 的时候提示`g++` 版本太低，而重新编译安装耗时太长了。
+
+>WARNING: C++ compiler too old, need g++ 4.8 or clang++ 3.4 (CXX=g++)
+
+
+还是先部署到 `meteor.com`吧。虽然慢得像乌龟一样……
+
+```bash
+$ meteor deploy singledog.meteor.com
+```
+
+可以在浏览器打开 `http://singledog.meteor.com` 查看了，由于国内网速的原因和当前阶段技术能力不足，会有一些诡异的问题出现……
 
 
 
