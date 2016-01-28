@@ -1,5 +1,7 @@
 # 简介
 add line in dev branch
+modify again for not fast forward --no-ff option(need -m because it like a commit)
+
 **before**
 
 Tony哥给了我大把的资料，让我尽快熟悉 `Meteor` 结合 `React` 的开发相关知识。
